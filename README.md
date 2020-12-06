@@ -1,6 +1,6 @@
 ### Cara Install :
 Clone repo ini:  
-> git clone https://github.com/
+> git clone https://github.com/shabri-arrahim/news_scraper.git
 
 Masuk kedalam folder project
 > cd news_scraper
