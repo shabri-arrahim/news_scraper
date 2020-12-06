@@ -37,6 +37,8 @@ Sesuaikan pengaturan seperti yang tertulis pada masing-masing kelas spider
 Run crawl command berikut untuk mengumpulkan index berita:
 > scrapy crawl kompas -o kompasindex.json -t json
 
-Run crawl command berikut untuk mengumpulkan content berita:
+Run crawl command berikut untuk mengumpulkan content berita sebagai json file:
 > scrapy crawl kompastrd -o kompascontent.json -t json
-> scrapy crawl kompastrd -o kompascontent.csv -t csv [Sebaiknya gunakan yang ini]
+
+Run crawl command berikut untuk mengumpulkan content berita sebagai csv file [Sebaiknya gunakan yang ini]:
+> scrapy crawl kompastrd -o kompascontent.csv -t csv 
