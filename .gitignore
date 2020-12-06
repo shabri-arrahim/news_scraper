@@ -1,0 +1,6 @@
+envnews/
+.idea/
+*.pyc
+*.swp
+__init__.py
+__pycache__/
