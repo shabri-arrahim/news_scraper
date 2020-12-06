@@ -8,16 +8,14 @@ class Kompastrd(scrapy.Spider):
     name = "kompastrd"
     allowed_domains = ["kompas.com"]
 
-    # f = open('..\kompas\kompasindex.json', 'r')
-    # urls = json.load(f)
+    f = open('..\kompas\kompasindex.json', 'r')
+    urls = json.load(f)
 
-    start_urls = None #[url['link'] for url in urls]
+    start_urls = [url['link'] for url in urls][0:1000]
 
     def parse(self, response):
 
-        # article = Selector(response).xpath('//div[@class="contentArticle box-shadow-new"]')
-
         item = KompasItem()
-        item['content'] = Selector(response).xpath('//div[@class="read__content"]//text()').getall()
+        item['content'] = " ".join(Selector(response).xpath('//div[@class="read__content"]//text()').getall()).strip()
 
         yield item
