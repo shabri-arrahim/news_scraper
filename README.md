@@ -39,3 +39,4 @@ Run crawl command berikut untuk mengumpulkan index berita:
 
 Run crawl command berikut untuk mengumpulkan content berita:
 > scrapy crawl kompastrd -o kompascontent.json -t json
+> scrapy crawl kompastrd -o kompascontent.csv -t csv [Sebaiknya gunakan yang ini]
