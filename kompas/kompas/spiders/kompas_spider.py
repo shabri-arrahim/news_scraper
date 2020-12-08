@@ -15,7 +15,7 @@ class KompasSpider(scrapy.Spider):
     page = range(1, 229)
     # Ganti nama kategoti berdasarkan index list kategori diatas
     # http://indeks.kompas.com/?site=[sisipkan kategori diposisi ini]&page=
-    urls = ["http://indeks.kompas.com/?site=health&page="+str(i) for i in page]
+    urls = ["http://indeks.kompas.com/?site=tekno&page="+str(i) for i in page]
     start_urls = urls
             
     def parse(self, response):
