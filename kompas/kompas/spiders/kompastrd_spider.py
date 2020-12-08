@@ -8,7 +8,7 @@ class Kompastrd(scrapy.Spider):
     name = "kompastrd"
     allowed_domains = ["kompas.com"]
 
-    f = open('..\kompas\kompasindex.json', 'r')
+    f = open('..\kompas\kompasindex_business.json', 'r')
     urls = json.load(f)
 
     start_urls = [url['link'] for url in urls][0:1000]

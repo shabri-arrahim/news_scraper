@@ -13,7 +13,7 @@ class KompasSpider(scrapy.Spider):
         'sains','hype','vik','kolom','jeo'"""
     # Sesuaikan jumlah page index berdasarkan kategori              
     page = range(1, 229)
-    # Ganti nomor kategoti berdasarkan index list kategori diatas
+    # Ganti nama kategoti berdasarkan index list kategori diatas
     # http://indeks.kompas.com/?site=[sisipkan kategori diposisi ini]&page=
     urls = ["http://indeks.kompas.com/?site=health&page="+str(i) for i in page]
     start_urls = urls
