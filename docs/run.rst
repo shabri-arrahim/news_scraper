@@ -13,6 +13,6 @@ People            Get People Profile                                            
 People            Make Connection and Send Message                                /people/make_connection/{people_public_id}   None               Message          POST
                   (Message length must be < 300)
 Message           Get all conversation in conversation field                      /message/conversations                       None               None             GET
-People            Get message detail from a specific user                         /message/detail/{people_public_id}           None               None             GET
-People            Send message to a specific conversation                         /message/{conversation_id}                   None               Message          POST
+Message           Get message detail from a specific user                         /message/detail/{people_public_id}           None               None             GET
+Message           Send message to a specific conversation                         /message/{conversation_id}                   None               Message          POST
 ================  ==============================================================  ===========================================  =================  ===============  =============
