@@ -12,10 +12,7 @@ People            Search People                                                 
 People            Get People Profile                                              /people/profile/{people_public_id}           None               None             GET
 People            Make Connection and Send Message                                /people/make_connection/{people_public_id}   None               Message          POST
                   (Message length must be < 300)
-
-
-Definition list   Term is flush-left : optional classifier
-                      Definition is indented, no blank line between
-Field list        :field name: field body
-Option list       -o  at least 2 spaces between option & description
+Message           Get all conversation in conversation field                      /message/conversations                       None               None             GET
+People            Get message detail from a specific user                         /message/detail/{people_public_id}           None               None             GET
+People            Send message to a specific conversation                         /message/{conversation_id}                   None               Message          POST
 ================  ==============================================================  ===========================================  =================  ===============  =============
