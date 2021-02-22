@@ -18,4 +18,4 @@ Definition list   Term is flush-left : optional classifier
                       Definition is indented, no blank line between
 Field list        :field name: field body
 Option list       -o  at least 2 spaces between option & description
-================  ==============================================================  =====================================  =================  ===============  =============
+================  ==============================================================  ===========================================  =================  ===============  =============
