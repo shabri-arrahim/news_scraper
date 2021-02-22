@@ -5,9 +5,8 @@ Category          Description                                                   
 Authentication    Make authentication to LinkedIn Service (Login handler)         /auth                                  None               username         POST
                                                                                                                                             password
                                                                                                                                             proxies
-
-
-                  When making authentication to LinkedIn Service, sometimes       /auth/verification
+                                                                                                                                            
+Authentication    When making authentication to LinkedIn Service, sometimes       /auth/verification                     None               email pin        POST
                   LinkedIn needs an email verification pin to make the session.
                   This endpoint use for it
                   
