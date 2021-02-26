@@ -35,8 +35,24 @@ Message           Send message to a specific conversation                       
 
 Data, Parameters and Headers explanation and formating
 ------------------------------------------------------
+================  ============================================================
+Explicit Markup   Examples (visible in the `text source`_)
+================  ============================================================
+username          .. is a user username for LinkedIn :example: bryan@mail.com
+                     (even [#labelled]) or [*] auto-symbol
+Citation          .. [CIT2002] A citation.
+Hyperlink Target  .. _reStructuredText: http://docutils.sf.net/rst.html
+                  .. _indirect target: reStructuredText_
+                  .. _internal target:
+Anonymous Target  __ http://docutils.sf.net/docs/ref/rst/restructuredtext.html
+Directive ("::")  .. image:: images/biohazard.png
+Substitution Def  .. |substitution| replace:: like an inline directive
+Comment           .. is anything else
+Empty Comment     (".." on a line by itself, with blank lines before & after,
+                  used to separate indentation contexts)
+================  ============================================================
 
-- **username**: is a user username for LinkedIn :e.g: bryan@mail.com) 
+
 - **password**: is a user password for LinkedIn 
 - **proxy**: is using for make sure the connection is secure and to avoid LinkedIn to block an account :format: {"proxy_username": "xyz", "proxy_password": "xyz", "proxy_host": "123.12.123.12",  "proxy_port": "1234"})
 - **cookie**: is using for authenticate user :fromat: {"JSESSIONID": "value", "bcookie": "value", "bscookie": "value", "lang": "value", "li_at": "value", "lidc": "value"})
