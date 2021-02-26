@@ -1,10 +1,20 @@
+API End-Point
+-------------
+
+This API requires authenticating to LinkedIn in order to run any processes you want.
+
+An endpoint for performing authentication is provided (endpoint with authentication category).
+
+All you have to do is, first check whether your account requires a verification pin email to log in with the endpoint provided (the route will be: "/ auth / check_verification"),
+if the response you get is "True", When you access the route "/ auth" (to login) you have to send a verification pin email via the provided endpoints (the route will be: "/ auth / verification").
 
 ================  ==============================================================  ===========================================  =================  ===============  =============
 Category          Description                                                     Endpoint                                     Parameters         Data             Method
 ================  ==============================================================  ===========================================  =================  ===============  =============
+Authentication    To check if the account need a verification PIN or not          /auth/check_verification                     None               username         POST
+                                                                                                                                                  password
 Authentication    Make authentication to LinkedIn Service (Login handler)         /auth                                        None               username         POST
                                                                                                                                                   password
-                                                                                                                                                  proxies
 Authentication    When making authentication to LinkedIn Service, sometimes       /auth/verification                           None               email pin        POST
                   LinkedIn needs an email verification pin to make the session.
                   This endpoint use for it.
