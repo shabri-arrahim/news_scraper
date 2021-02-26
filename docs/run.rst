@@ -35,10 +35,10 @@ Message           Send message to a specific conversation                       
 
 Data, Parameters and Headers explanation and formating
 ------------------------------------------------------
-================  ============================================================
+================  =============================================================
 Explicit Markup   Examples (visible in the `text source`_)
-================  ============================================================
-username          .. is a user username for LinkedIn :example: bryan@mail.com
+================  =============================================================
+username          .. is a user username for LinkedIn [example] bryan@mail.com
                      (even [#labelled]) or [*] auto-symbol
 Citation          .. [CIT2002] A citation.
 Hyperlink Target  .. _reStructuredText: http://docutils.sf.net/rst.html
