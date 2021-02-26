@@ -31,3 +31,15 @@ Message           Get message detail from a specific user                       
 Message           Send message to a specific conversation                         /message/{conversation_id}                   None               Message          Proxy            POST
                                                                                                                                                                    Cookie
 ================  ==============================================================  ===========================================  =================  ===============  ===============  =============
+
+
+Data, Parameters and Headers explanation and formating
+------------------------------------------------------
+
+- **username**: is a user username for LinkedIn (e.g. bryan@mail.com) 
+- **password**: is a user password for LinkedIn 
+- **proxy**: is using for make sure the connection is secure and to avoid LinkedIn to block an account (format: {"proxy_username": "xyz", "proxy_password": "xyz", "proxy_host": "123.12.123.12",  "proxy_port": "1234"})
+- **cookie**: is using for authenticate user (fromat: {"JSESSIONID": "value", "bcookie": "value", "bscookie": "value", "lang": "value", "li_at": "value", "lidc": "value"})
+- **url**: URL for people search on linkedin(e.g. https://www.linkedin.com/search/results/people/?keywords=programmer%26origin=SWITCH_SEARCH_VERTICAL)
+- **people_public_id**: is a people public identity on LinkedIn (e.g alexanderschelchere)
+- **conversation_id**: is a unique number (id) for a conversation on LinkedIn (e.g. 6762640841480773632)
